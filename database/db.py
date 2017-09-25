@@ -11,7 +11,6 @@ class DbConnection:
         try:
             engine = create_engine(self._connection_string)
             engine.connect()
-            print('Conexión exitosa')
         except OperationalError as e:
             print(e.args)
         return engine
