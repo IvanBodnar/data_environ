@@ -36,7 +36,7 @@ def crear_entrecalles(calle):
     for _ in range(10):
         cruce1 = interseccion_random(calle)
         cruce2 = interseccion_random(calle)
-        tabla = 'test_entrecalles.{}_{}_{}'.format(calle.replace(' ', '').replace(',', '').replace('.', ''),
+        tabla = 'temp.{}_{}_{}'.format(calle.replace(' ', '').replace(',', '').replace('.', ''),
                                                    cruce1.replace(' ', '').replace(',', '').replace('.', ''),
                                                    cruce2.replace(' ', '').replace(',', '').replace('.', ''))
         res = conn_alchemy.execute('''
